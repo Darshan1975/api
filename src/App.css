@@ -84,3 +84,14 @@ h1{
   font-size: 18px;
   font-weight: 400;
 }
+.dot{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.icon{
+  margin-right: 10px; 
+  justify-content: center !important;
+  align-items: center !important;
+  font-size: 18px;
+}

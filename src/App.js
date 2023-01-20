@@ -1,7 +1,8 @@
-import logo from './logo.svg';
+
 import './App.css';
 import {useEffect, useState} from 'react'
 import axios from 'axios';
+import {FaCircle } from 'react-icons/fa';
 
 function App() {
 
@@ -18,6 +19,8 @@ function App() {
     // handle error
     console.log(error);
   })
+  
+
 
   },[]);
   return (
@@ -32,7 +35,7 @@ function App() {
               <div className="caption">
               <section>
                 <h1>{item.name}</h1>
-                <span>{item.status} - {item.species}</span>
+                <FaCircle className='icon' style={{color: item.status==='Alive' ? 'green' : item.status==='Dead'? 'red' : 'white'}}/>{item.status} - {item.species}
               </section>
               <section>
                 <span className='txt-grey'>Last Known location :</span><br></br>
