@@ -35,7 +35,7 @@ function App() {
               <div className="caption">
               <section>
                 <h1>{item.name}</h1>
-                <FaCircle className='icon' style={{fontSize: '12px',color: item.status==='Alive' ? 'green' : item.status==='Dead'? 'red' : 'white'}}/>{item.status} - {item.species}
+                <FaCircle className='icon' style={{fontSize: '12px',color: item.status==='Alive' ? 'green' : item.status==='Dead'? 'red' : 'greycolor'}}/>{item.status} - {item.species}
               </section>
               <section>
                 <span className='txt-grey'>Last Known location :</span><br></br>
